@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import Title from '@components/Title'
-import Description from '@components/Description'
-import CardList from '@components/CardList'
-import Footer from '@components/Footer'
+import Title from 'src/components/Title'
+import Description from 'src/components/Description'
+import CardList from 'src/components/CardList'
+import Footer from 'src/components/Footer'
 
-import { ContainerWrap } from '@components/wrap/ContainerWrap'
-import { MainWrap } from '@components/wrap/MainWrap'
+import { ContainerWrap } from 'src/components/wrap/ContainerWrap'
+import { MainWrap } from 'src/components/wrap/MainWrap'
 
 const Home: NextPage = () => {
   return (
