@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 import { ReactNode } from 'react'
-import styles from '../../styles/Home.module.css'
+import styles from '@styles/Home.module.css'
 
 export interface MainWrapProps {
   children: ReactNode
