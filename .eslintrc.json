@@ -11,7 +11,7 @@
     // prettierのextends は 他のextendsより後に記述する
     "prettier"
   ],
-  // "parser": "@typescript-eslint/parser",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module",
     "project": "./tsconfig.json"
