@@ -1,14 +1,17 @@
 {
   "extends": [
+    // おすすめ設定
     "eslint:recommended",
     // TypeScriptでチェックされる項目 を Lintから除外する設定
     "plugin:@typescript-eslint/recommended",
+    // .storybook フォルダー内の構成ファイルをリントする
+    "plugin:storybook/recommended",
     // Next.js用 の設定
     "next/core-web-vitals",
     // prettierのextends は 他のextendsより後に記述する
     "prettier"
   ],
-  "parser": "@typescript-eslint/parser",
+  // "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "sourceType": "module",
     "project": "./tsconfig.json"
@@ -27,10 +30,22 @@
         "alphabetize": {
           // 昇順にソート
           "order": "asc",
-          // 小文字大文字を区別する
+          // 大文字小文字関係なくアルファベット順に
           "caseInsensitive": true
         }
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      // or whatever matches stories specified in .storybook/main.js
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+      "rules": {
+        // example of overriding a rule
+        "storybook/hierarchy-separator": "error",
+        // example of disabling a rule
+        "storybook/default-exports": "off"
+      }
+    }
+  ]
 }
