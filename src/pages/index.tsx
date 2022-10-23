@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import Title from 'src/components/Title'
-import Description from 'src/components/Description'
 import CardList from 'src/components/CardList'
+import Description from 'src/components/Description'
 import Footer from 'src/components/Footer'
-
+import Title from 'src/components/Title'
 import { ContainerWrap } from 'src/components/wrap/ContainerWrap'
 import { MainWrap } from 'src/components/wrap/MainWrap'
 
