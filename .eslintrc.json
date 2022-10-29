@@ -2,15 +2,16 @@
   "extends": [
     // おすすめ設定
     "eslint:recommended",
-    // TypeScriptでチェックされる項目 を Lintから除外する設定
+    // TypeScript で チェックされる項目 を Lintから除外する設定
     "plugin:@typescript-eslint/recommended",
-    // .storybook フォルダー内の構成ファイルをリントする
+    // .storybook フォルダー内の構成ファイル を lintする
     "plugin:storybook/recommended",
     // Next.js用 の設定
     "next/core-web-vitals",
-    // prettierのextends は 他のextendsより後に記述する
-    "prettier",
-    "plugin:tailwindcss/recommended"
+    // TailwindCSS の ソートの設定
+    "plugin:tailwindcss/recommended",
+    // この prettier の extends は 他のextends より後に記述する
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
