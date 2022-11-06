@@ -1,13 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import CardList from '@components/CardList'
-import Description from '@components/Description'
-import Footer from '@components/Footer'
-import Navbar from '@components/Navbar'
-import Title from '@components/Title'
+import ButtonGroup from '@components/ButtonGroup'
+import { Header } from '@components/Header'
+import Inventory from '@components/Inventory'
+import Menu from '@components/Menu'
 import { ContainerWrap } from '@components/wrap/ContainerWrap'
-import { MainWrap } from '@components/wrap/MainWrap'
+import InventoryProvider from 'src/lib/provider'
 
 const Home: NextPage = () => {
   return (
@@ -18,19 +17,30 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
+
+      {/* カレー在庫管理 */}
+      <InventoryProvider>
+        <div className="p-5 m-8 border-solid border w-[600px] bottom-0">
+          <h1 className="text-3xl font-bold">在庫管理システム</h1>
+          <div className="m-8">
+            <Inventory />
+            <Menu />
+            <ButtonGroup />
+          </div>
+        </div>
+      </InventoryProvider>
+
       {/* <EmotionStyleSample /> */}
-
-      <Navbar />
-
-      <MainWrap>
+      {/* <Navbar /> */}
+      {/* <MainWrap>
         <Title />
 
         <Description />
 
         <CardList />
-      </MainWrap>
-
-      <Footer />
+      </MainWrap> */}
+      {/* <Footer /> */}
     </ContainerWrap>
   )
 }
