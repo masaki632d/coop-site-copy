@@ -5,7 +5,7 @@ import { Inventory } from 'src/feature/curry/components/Inventory'
 import { Menu } from 'src/feature/curry/components/Menu'
 import InventoryProvider from 'src/feature/curry/lib/provider'
 
-export const Curry: NextPage = () => (
+const Curry: NextPage = () => (
   <div>
     <InventoryProvider>
       <div className="p-5 m-8 border-solid border w-[600px] bottom-0">
@@ -19,3 +19,5 @@ export const Curry: NextPage = () => (
     </InventoryProvider>
   </div>
 )
+
+export default Curry
