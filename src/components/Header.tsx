@@ -9,7 +9,7 @@ export const Header: FC = () => {
     <header className="flex justify-between items-center w-full h-16 lg:h-24 lg:px-20 bg-white px-4">
       <Link href="/">
         <a>
-          <Image src={vercelImage} width={283} height={64} alt="ロゴ画像" />
+          <Image src={vercelImage} width={72} height={16} alt="ロゴ画像" />
         </a>
       </Link>
 

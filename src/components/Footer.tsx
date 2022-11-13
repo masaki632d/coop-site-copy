@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { FC } from 'react'
 
+import vercelImage from '@public_images/vercel.svg'
 import styles from '@styles/Home.module.scss'
 
 export const Footer: FC = () => (
@@ -12,7 +13,7 @@ export const Footer: FC = () => (
     >
       Powered by{' '}
       <span className={styles.logo}>
-        <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+        <Image src={vercelImage} width={72} height={16} alt="Vercel Logo" />
       </span>
     </a>
   </footer>
