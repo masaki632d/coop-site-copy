@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 
-import { InventoryContext } from '../lib/provider'
+import { InventoryContext } from '../feature/curry/lib/provider'
 
 export default function Inventory() {
   const { state } = useContext(InventoryContext)

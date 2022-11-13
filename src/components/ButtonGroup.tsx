@@ -1,6 +1,6 @@
 import { MouseEvent, useContext } from 'react'
 
-import { InventoryContext } from '../lib/provider'
+import { InventoryContext } from '../feature/curry/lib/provider'
 
 export default function ButtonGroup() {
   const { dispatch } = useContext(InventoryContext)
