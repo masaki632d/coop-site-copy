@@ -1,6 +1,7 @@
 import Link from 'next/link'
+import { FC } from 'react'
 
-export const Header = () => {
+export const Header: FC = () => {
   return (
     <header className="flex justify-between items-center w-full h-16 lg:h-24 lg:px-20 bg-white px-4">
       <a href="">
@@ -25,5 +26,3 @@ export const Header = () => {
     </header>
   )
 }
-
-export default Header

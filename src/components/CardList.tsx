@@ -1,6 +1,8 @@
+import { FC } from 'react'
+
 import styles from '@styles/Home.module.scss'
 
-export const CardList = () => (
+export const CardList: FC = () => (
   <div className={styles.grid}>
     <a href="https://nextjs.org/docs" className={styles.card}>
       <h2>Documentation &rarr;</h2>
@@ -26,5 +28,3 @@ export const CardList = () => (
     </a>
   </div>
 )
-
-export default CardList

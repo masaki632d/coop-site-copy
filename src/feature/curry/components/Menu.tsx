@@ -1,8 +1,8 @@
-import { useContext } from 'react'
+import { FC, useContext } from 'react'
 
-import { InventoryContext } from '../feature/curry/lib/provider'
+import { InventoryContext } from '../lib/provider'
 
-export default function Menu() {
+export const Menu: FC = () => {
   const { state } = useContext(InventoryContext)
 
   return (

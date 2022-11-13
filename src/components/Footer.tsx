@@ -1,8 +1,9 @@
 import Image from 'next/image'
+import { FC } from 'react'
 
 import styles from '@styles/Home.module.scss'
 
-export const Footer = () => (
+export const Footer: FC = () => (
   <footer className={styles.footer}>
     <a
       href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -16,5 +17,3 @@ export const Footer = () => (
     </a>
   </footer>
 )
-
-export default Footer

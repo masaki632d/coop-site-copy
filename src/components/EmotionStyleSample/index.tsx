@@ -1,9 +1,9 @@
+import { FC } from 'react'
+
 import { styles } from './Styled'
 
-const EmotionStyleSample = () => (
+export const EmotionStyleSample: FC = () => (
   <div>
     <h1 css={styles.sample}>Emotion Style</h1>
   </div>
 )
-
-export default EmotionStyleSample

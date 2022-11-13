@@ -1,9 +1,11 @@
-import ButtonGroup from '@components/ButtonGroup'
-import Inventory from '@components/Inventory'
-import Menu from '@components/Menu'
+import { NextPage } from 'next'
+
+import { ButtonGroup } from 'src/feature/curry/components/ButtonGroup'
+import { Inventory } from 'src/feature/curry/components/Inventory'
+import { Menu } from 'src/feature/curry/components/Menu'
 import InventoryProvider from 'src/feature/curry/lib/provider'
 
-const Curry = () => (
+export const Curry: NextPage = () => (
   <div>
     <InventoryProvider>
       <div className="p-5 m-8 border-solid border w-[600px] bottom-0">
@@ -17,5 +19,3 @@ const Curry = () => (
     </InventoryProvider>
   </div>
 )
-
-export default Curry

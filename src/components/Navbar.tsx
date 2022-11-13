@@ -1,6 +1,7 @@
 import Link from 'next/link'
+import { FC } from 'react'
 
-export const Navbar = () => {
+export const Navbar: FC = () => {
   return (
     <ul>
       <li>
@@ -16,5 +17,3 @@ export const Navbar = () => {
     </ul>
   )
 }
-
-export default Navbar

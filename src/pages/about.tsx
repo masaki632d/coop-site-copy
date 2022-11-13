@@ -1,11 +1,11 @@
-import Navbar from 'src/components/Navbar'
+import { NextPage } from 'next'
 
-const About = () => (
+import { Navbar } from 'src/components/Navbar'
+
+export const About: NextPage = () => (
   <div>
     <Navbar />
 
     <h1>About</h1>
   </div>
 )
-
-export default About

@@ -1,8 +1,9 @@
-import { MouseEvent, useContext } from 'react'
+import { FC, MouseEvent, useContext } from 'react'
 
-import { InventoryContext } from '../feature/curry/lib/provider'
+// TODO: ↑ここも順番 も 設定追加でソートできそう
+import { InventoryContext } from '../lib/provider'
 
-export default function ButtonGroup() {
+export const ButtonGroup: FC = () => {
   const { dispatch } = useContext(InventoryContext)
 
   const onClickArrival = (e: MouseEvent<HTMLButtonElement>) => {
