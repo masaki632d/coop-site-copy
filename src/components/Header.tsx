@@ -6,7 +6,7 @@ import vercelImage from '@public_images/vercel.svg'
 
 export const Header: FC = () => {
   return (
-    <header className="flex justify-between items-center w-full h-16 lg:h-24 lg:px-20 bg-white px-4">
+    <header className="flex h-16 w-full items-center justify-between bg-white px-4 lg:h-24 lg:px-20">
       <Link href="/">
         <a>
           <Image src={vercelImage} width={72} height={16} alt="ロゴ画像" />

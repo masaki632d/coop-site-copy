@@ -7,7 +7,7 @@ export const Menu: FC = () => {
 
   return (
     <>
-      <h2 className="text-xl font-bold mb-2">メニュー表</h2>
+      <h2 className="mb-2 text-xl font-bold">メニュー表</h2>
       <ul className="mb-6">
         <li>
           カレーライス: {state.soldOutCurryRice && <strong>売り切れ</strong>}

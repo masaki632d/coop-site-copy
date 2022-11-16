@@ -6,7 +6,7 @@ export interface MainWrapProps {
 }
 
 export const MainWrap: FC<MainWrapProps> = ({ children }) => (
-  <main className="flex flex-col justify-center min-h-screen py-2 items-center">
+  <main className="flex min-h-screen flex-col items-center justify-center py-2">
     {children}
   </main>
 )

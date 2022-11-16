@@ -31,12 +31,12 @@ export const ButtonGroup: FC = () => {
 
   return (
     <>
-      <h2 className="text-xl font-bold mb-2">操作</h2>
+      <h2 className="mb-2 text-xl font-bold">操作</h2>
 
       <div className="mb-2">
         <button
           onClick={onClickArrival}
-          className="bg-green-200 border-gray-500 border-solid border rounded"
+          className="rounded border border-solid border-gray-500 bg-green-200"
         >
           入荷
         </button>
@@ -45,19 +45,19 @@ export const ButtonGroup: FC = () => {
       <div className="flex gap-2">
         <button
           onClick={onClickOrderCurryRice}
-          className="bg-gray-200 border-gray-500 border-solid border rounded"
+          className="rounded border border-solid border-gray-500 bg-gray-200"
         >
           注文: カレーライス
         </button>
         <button
           onClick={onClickOrderPorkCutletCurry}
-          className="bg-gray-200 border-gray-500 border-solid border rounded"
+          className="rounded border border-solid border-gray-500 bg-gray-200"
         >
           注文: カツカレー
         </button>
         <button
           onClick={onClickOrderCheeseCurry}
-          className="bg-gray-200 border-gray-500 border-solid border rounded"
+          className="rounded border border-solid border-gray-500 bg-gray-200"
         >
           注文: チーズカレー
         </button>

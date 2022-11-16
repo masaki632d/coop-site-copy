@@ -8,7 +8,7 @@ import InventoryProvider from 'src/feature/curry/lib/provider'
 const Curry: NextPage = () => (
   <div>
     <InventoryProvider>
-      <div className="p-5 m-8 border-solid border w-[600px] bottom-0">
+      <div className="bottom-0 m-8 w-[600px] border border-solid p-5">
         <h1 className="text-3xl font-bold">カレー屋_在庫管理システム</h1>
         <div className="m-8">
           <Inventory />
