@@ -8,8 +8,6 @@
     "plugin:storybook/recommended",
     // Next.js用 の設定
     "next/core-web-vitals",
-    // TailwindCSS の ソートの設定
-    "plugin:tailwindcss/recommended",
     // この prettier の extends は 他のextends より後に記述する
     "prettier"
   ],
@@ -18,7 +16,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint", "import", "unused-imports", "tailwindcss"],
+  "plugins": ["@typescript-eslint", "import", "unused-imports"],
   "rules": {
     // 他ルールとバッティングするので off にする
     "@typescript-eslint/no-unused-vars": "off",

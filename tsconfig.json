@@ -19,10 +19,11 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@pages/*": ["src/pages/*"],
-      "@feature/*": ["src/feature/*"],
-      "@styles/*": ["src/styles/*"],
+      "@libs/*": ["src/libs/*"],
+      "@hooks/*": ["src/hooks/*"],
       "@stories/*": ["src/stories/*"],
-      "@public_images/*": ["public/*"]
+      "@styles/*": ["src/styles/*"],
+      "@public_images/*": ["public/images/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],

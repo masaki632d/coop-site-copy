@@ -14,11 +14,13 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "11.10.0",
     "@emotion/react": "11.10.5",
     "next": "12.3.1",
+    "next-seo": "5.15.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "1.55.0"
+    "react-use": "17.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
@@ -42,17 +44,14 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-storybook": "0.6.6",
-    "eslint-plugin-tailwindcss": "3.7.0",
     "eslint-plugin-unused-imports": "2.0.0",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
-    "postcss": "8.4.18",
     "prettier": "2.7.1",
     "stylelint": "14.14.0",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-recess-order": "3.0.0",
     "stylelint-config-standard-scss": "6.0.0",
-    "tailwindcss": "3.2.4",
     "typescript": "4.8.4"
   },
   "lint-staged": {

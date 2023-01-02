@@ -1,7 +1,6 @@
 .next
 next-env.d.ts
 node_modules
-tailwind.config.js
 yarn.lock
 public
 // Inside your .eslintignore file
