@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 
-import { useTopDisplayServices } from '@hooks/top/useTopDisplayServices'
+import { useTopDisplayServices } from '@hooks/top/use-top-display-services'
 import { BaseLayout } from '@libs/components/BaseLayout/BaseLayout'
 import { Button } from '@libs/components/Button'
 import { Headline } from '@libs/components/Headline'

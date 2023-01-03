@@ -1,4 +1,4 @@
-import { useVisible } from '@hooks/top/useVisible'
+import { useVisible } from '@hooks/top/use-visible'
 import { Footer } from '@libs/components/Footer'
 import { Header } from '@libs/components/Header'
 

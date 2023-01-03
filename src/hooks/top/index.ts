@@ -1,1 +1,1 @@
-export * from './useTopDisplayServices'
+export * from './use-top-display-services'
