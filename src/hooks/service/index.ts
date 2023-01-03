@@ -1,1 +1,1 @@
-export * from './useSelectedCategoryServices'
+export * from './use-selected-category-services'
