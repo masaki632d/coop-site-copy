@@ -1,16 +1,12 @@
 import { css } from '@emotion/react'
-import Image from 'next/image'
-import { FC } from 'react'
 
-import { Button } from '@libs/components/Button'
-import { ServiceItem } from '@libs/constants/service'
 import { elevation } from '@styles/elevation'
 import { mq } from '@styles/mediaQuery'
 import { palette } from '@styles/palette'
 import { spacing } from '@styles/spacing'
 import { typography } from '@styles/typography'
 
-const cardStyles = {
+export const styles = {
   service: css`
     display: flex;
     margin-bottom: ${spacing(10)};
@@ -93,54 +89,3 @@ const cardStyles = {
     }
   `,
 }
-
-export const ServiceCard: FC<ServiceItem> = ({
-  name,
-  code,
-  siteURL,
-  contactURL,
-  siteCategory,
-  copy,
-  description,
-  imagePath,
-}) => (
-  <div css={cardStyles.service} id={code}>
-    <figure css={cardStyles.img}>
-      <Image
-        src={`/images/service/logo/${imagePath}`}
-        alt={name}
-        width={330}
-        height={140}
-        objectFit="cover"
-      />
-    </figure>
-
-    <div css={cardStyles.body}>
-      <h2 css={cardStyles.title}>{name}</h2>
-      {siteCategory && <p css={cardStyles.siteCategory}>{siteCategory}</p>}
-      <h3 css={cardStyles.copy}>{copy}</h3>
-      <p css={cardStyles.description}>{description}</p>
-      <div css={cardStyles.links}>
-        {siteURL && (
-          <Button
-            as="anchor"
-            label="公式サイト"
-            size="small"
-            href={siteURL}
-            target="_blank"
-            rel="noopener noreferrer"
-          />
-        )}
-        <Button
-          as="anchor"
-          label="お問い合わせ"
-          color="black"
-          size="small"
-          href={contactURL}
-          target="_blank"
-          rel="noopener noreferrer"
-        />
-      </div>
-    </div>
-  </div>
-)

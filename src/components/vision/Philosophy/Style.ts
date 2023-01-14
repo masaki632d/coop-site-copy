@@ -1,13 +1,10 @@
 import { css } from '@emotion/react'
-import { FC } from 'react'
 
-import { BaseLayout } from '@libs/components/BaseLayout'
-import { Headline } from '@libs/components/Headline/Headline'
 import { mq } from '@styles/mediaQuery'
 import { spacing } from '@styles/spacing'
 import { typography } from '@styles/typography'
 
-const styles = {
+export const styles = {
   philosophy: css`
     text-align: center;
     margin-top: ${spacing(10)};
@@ -60,34 +57,4 @@ const styles = {
       height: 248px;
     }
   `,
-}
-
-export const Philosophy: FC = () => {
-  return (
-    <>
-      <section css={styles.philosophyBg}>
-        <BaseLayout>
-          <Headline mainText="経営理念" subText="PHILOSOPHY" />
-          <div css={styles.philosophy}>
-            <p css={styles.philosophyText}>
-              経営理念
-              <br css={styles.spVisible} />
-              テキスト
-            </p>
-          </div>
-        </BaseLayout>
-      </section>
-
-      <BaseLayout>
-        <section css={styles.people}>
-          <h3 css={styles.peopleTitle}>“People”</h3>
-          <p css={styles.peopleText}>
-            テキストテキスト
-            <br />
-            テキストテキスト
-          </p>
-        </section>
-      </BaseLayout>
-    </>
-  )
 }

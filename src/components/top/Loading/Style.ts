@@ -1,7 +1,5 @@
 import { css, keyframes } from '@emotion/react'
-import { FC } from 'react'
 
-import { ResponsiveImage } from '@components/top/ResponsiveImage'
 import { palette } from '@styles/palette'
 
 const top = keyframes`
@@ -38,7 +36,7 @@ const fadeInImg = keyframes`
   }
 `
 
-const styles = {
+export const styles = {
   back: css`
     position: fixed;
     left: 0;
@@ -64,21 +62,4 @@ const styles = {
     animation: ${fadeInImg} ease-in 3s forwards;
     opacity: 0;
   `,
-}
-
-export const Loading: FC = () => {
-  return (
-    <>
-      <div css={[styles.back, styles.top]} />
-      <div css={[styles.back, styles.bottom]} />
-      <div css={styles.img}>
-        <ResponsiveImage
-          image={{
-            pc: '/images/top/slide/img_pc_0.jpg',
-            sp: '/images/top/slide/img_sp_0.jpg',
-          }}
-        />
-      </div>
-    </>
-  )
 }

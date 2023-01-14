@@ -1,13 +1,11 @@
 import { css } from '@emotion/react'
-import { FC } from 'react'
 
-import { BaseLayout } from '@libs/components/BaseLayout'
 import { mq } from '@styles/mediaQuery'
 import { palette } from '@styles/palette'
 import { spacing } from '@styles/spacing'
 import { typography } from '@styles/typography'
 
-const styles = {
+export const styles = {
   section: css`
     background-color: ${palette.white};
   `,
@@ -60,27 +58,3 @@ const styles = {
     }
   `,
 }
-
-export const Mission: FC = () => (
-  <>
-    <div css={styles.back} />
-    <section css={styles.section}>
-      <BaseLayout>
-        <h2 css={styles.mission}>
-          メッセージ
-          <br />
-          タイトル
-        </h2>
-        <p css={styles.text}>
-          メッセージテキストメッセージテキスト
-          <br css={styles.sp} />
-          メッセージテキストメッセージテキスト
-          <br />
-          メッセージテキストメッセージテキスト
-          <br css={styles.sp} />
-          メッセージテキストメッセージテキスト
-        </p>
-      </BaseLayout>
-    </section>
-  </>
-)
